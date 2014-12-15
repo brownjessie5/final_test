@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="store.js"></script>
+<style>
+header {
+    background-color:navy;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#8080C0;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:navy;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Grocery List</h1>
+</header>
+
+<nav>
+<button type="button" onclick="txCreateDB()">Create Database</button><br>
+<button type="button" onclick="txQueryStore()">Show Stores</button><br>
+<button type="button" onclick="txQueryList()">Show Lists</button><br>
+<button type="button" onclick="txDestroyDB()">Destroy Database</button><br>
+<button type="button" onclick="addTable()">Add Table</button><br>
+<button type="button" onclick="clearTable()">Clear Content</button><br>
+<button type="button" onclick="txQueryTableNames()">Show DB Tables</button><br>
+</nav>
+
+<section id="mainsec">
+<table id="maintab">
+</table>
+</section>
+
+<footer>
+Copyright Jessica Brown
+</footer>
+
+</body>
+</html>
