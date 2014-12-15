@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" charset="utf-8" src="scripts/store.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/queryList.js"></script>
 </head>
 <body>
 <header>
@@ -9,20 +11,11 @@ QuikShop
 </header>
 <div>
 <center>Pick Your List
-<table>
-<tr>
-<td><a href="javascript::showList(1)">Christmas Dinner</td>
-<td>12/05/2014</td>
-</tr>
-<tr>
-<td><a href="javascript::showList(2)">Groceries for Mom and Dad</td>
-<td>12/01/2014</td>
-</tr>
-<tr>
-<td><a href="javascript::showList(2)">Halloween Party</td>
-<td>10/15/2014</td>
-</tr>
+<table id="chooselist">
 </table>
+<script>
+txQueryList();
+</script>
 </center>
 </div>
 </body>
